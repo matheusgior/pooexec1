@@ -5,9 +5,9 @@ public class AlunoNota {
     private String nome;
     private String disciplina;
     private double nota;
-    private LocalDate dataLancamento;
+    private LocalData dataLancamento;
 
-    public AlunoNota(int idAluno, String nome, String disciplina, double nota, LocalDate dataLancamento) {
+    public AlunoNota(int idAluno, String nome, String disciplina, double nota, LocalData dataLancamento) {
         this.idAluno = idAluno;
         this.nome = nome;
         this.disciplina = disciplina;
@@ -28,7 +28,7 @@ public class AlunoNota {
     public void setNota(double nota) { this.nota = nota; }
 
     public LocalDate getDataLancamento() { return dataLancamento; }
-    public void setDataLancamento(LocalDate dataLancamento) { this.dataLancamento = dataLancamento; }
+    public void setDataLancamento(LocalData dataLancamento) { this.dataLancamento = dataLancamento; }
 
     public String toString() {
         return idAluno + " - " + nome + " - " + disciplina + " - " + nota + " - " + dataLancamento;
