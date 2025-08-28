@@ -18,7 +18,7 @@ public class Main {
 
             while ((linha = br.readLine()) != null) {
                 String[] dados = linha.split(",");
-                // Certifique-se de que a linha tem dados suficientes
+
                 if (dados.length >= 5) {
                     AlunoNota aluno = new AlunoNota(
                         Integer.parseInt(dados[0].trim()),

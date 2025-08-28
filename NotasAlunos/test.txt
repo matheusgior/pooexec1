@@ -1,2 +1,0 @@
-1, João Silva, Matemática, 8.5, 7.0
-2, Maria Oliveira, Física, 9.0, 6.5
