@@ -35,7 +35,7 @@ public class Main {
                         dados[1].trim(),
                         dados[2].trim(),
                         Double.parseDouble(dados[3].trim()),
-                        Double.parseDouble(dados[4].trim()), 0
+                        Double.parseDouble(dados[4].trim())
                     );
                     alunos.add(aluno);
                 }
