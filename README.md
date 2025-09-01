@@ -17,14 +17,11 @@ O resultado final é uma lista exibida no console, mostrando o ID, nome, discipl
 O formato correto é:
 id,nome,disciplina,notaP1,notaP2
 
-Arquivo ".txt"
+Exemplo do arquivo ".txt"
 
---
+
 1,João Silva,Matemática,8.5,9.0
 
 2,Maria Souza,Física,6.0,7.5
-
-3,Pedro Alves,Química,5.0,6.0
---
 
 -Ao executar o programa, ele irá pedir o nome do arquivo. Digite o nome do seu arquivo (por exemplo, "alunos.txt")pressione Enter.
