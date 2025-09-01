@@ -1,5 +1,5 @@
 /**
- * A classe AlunoNota representa um registro de aluno com informações de notas e faltas.
+ * A classe AlunoNota representa um registro de aluno com informações de notas.
  * Ela armazena dados como ID, nome, disciplina e notas das provas (P1 e P2).
  */
 public class AlunoNota {
@@ -13,8 +13,8 @@ public class AlunoNota {
      * @param idAluno    O ID único do aluno.
      * @param nome       O nome completo do aluno.
      * @param disciplina O nome da disciplina.
-     * @param p1         A nota da primeira prova.
-     * @param p2         A nota da segunda prova.
+     * @param p1         A nota da P1.
+     * @param p2         A nota da P2.
      */
     public AlunoNota(int idAluno, String nome, String disciplina, double p1, double p2) {
         this.idAluno = idAluno;
@@ -50,7 +50,7 @@ public class AlunoNota {
     public double getP2() { return p2; }
 
     /**
-     * @return Uma string formatada com os dados do aluno.
+     * @return Uma string com todos os dados do aluno.
      */
     @Override
     public String toString() {

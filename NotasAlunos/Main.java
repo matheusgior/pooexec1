@@ -6,13 +6,13 @@ import java.util.Scanner;
 
 /**
  * A classe Main é responsável por ler os dados de alunos de um arquivo de texto,
- * calcular a média das notas e exibir o status de aprovação de cada um.
- * O arquivo de entrada deve ter os dados separados por vírgula no seguinte formato:
+ * calcular a média das notas e exibir se as pessoas estão aprovadas.
+ * O arquivo de entrada deve ter os dados no seguinte formato:
  * id,nome,disciplina,notaP1,notaP2
  */
 public class Main {
     /**
-     * O método principal que inicia a execução do programa.
+     * O método principal que executa o programa.
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -45,7 +45,7 @@ public class Main {
             return;
         }
 
-        // Itera sobre a lista de alunos para calcular a média e verificar a aprovação
+        // Coleta os dados sobre a lista de alunos para calcular a média e verificar a aprovação
         for (AlunoNota aluno : alunos) {
             double media = (aluno.getP1() + aluno.getP2()) / 2;
             boolean aprovado = media >= 7;
