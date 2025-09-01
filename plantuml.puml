@@ -1,0 +1,29 @@
+
+
+@startuml
+' Classe que representa o registro do aluno
+class AlunoNota {
+    - idAluno : int
+    - nome : String
+    - disciplina : String
+    - p1 : double
+    - p2 : double
+
+    + AlunoNota(idAluno : int, nome : String, disciplina : String, p1 : double, p2 : double)
+    + getIdAluno() : int
+    + getNome() : String
+    + getDisciplina() : String
+    + getP1() : double
+    + getP2() : double
+    + toString() : String
+}
+
+' Classe principal que lê o arquivo e processa os alunos
+class Main {
+    + main(args : String[]) : void
+}
+
+' Relacionamento: Main usa AlunoNota
+Main --> AlunoNota : cria objetos
+
+@enduml
